@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		90DF1A5226777F6F00E77E2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DF1A5126777F6F00E77E2C /* ContentView.swift */; };
 		90DF1A5426777F7500E77E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DF1A5326777F7500E77E2C /* Assets.xcassets */; };
 		90DF1A5726777F7500E77E2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DF1A5626777F7500E77E2C /* Preview Assets.xcassets */; };
+		90DF1A6126778E0F00E77E2C /* SideMenuViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DF1A6026778E0F00E77E2C /* SideMenuViewTest.swift */; };
+		90DF1A652677915C00E77E2C /* VTViews in Frameworks */ = {isa = PBXBuildFile; productRef = 90DF1A642677915C00E77E2C /* VTViews */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		90DF1A5326777F7500E77E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90DF1A5626777F7500E77E2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90DF1A5826777F7500E77E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90DF1A6026778E0F00E77E2C /* SideMenuViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewTest.swift; sourceTree = "<group>"; };
+		90DF1A622677908700E77E2C /* VTViews */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VTViews; path = ../VTViews; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90DF1A652677915C00E77E2C /* VTViews in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +41,10 @@
 		90DF1A4326777F6F00E77E2C = {
 			isa = PBXGroup;
 			children = (
+				90DF1A622677908700E77E2C /* VTViews */,
 				90DF1A4E26777F6F00E77E2C /* VTViews-Master */,
 				90DF1A4D26777F6F00E77E2C /* Products */,
+				90DF1A632677915C00E77E2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +61,7 @@
 			children = (
 				90DF1A4F26777F6F00E77E2C /* VTViews_MasterApp.swift */,
 				90DF1A5126777F6F00E77E2C /* ContentView.swift */,
+				90DF1A6026778E0F00E77E2C /* SideMenuViewTest.swift */,
 				90DF1A5326777F7500E77E2C /* Assets.xcassets */,
 				90DF1A5826777F7500E77E2C /* Info.plist */,
 				90DF1A5526777F7500E77E2C /* Preview Content */,
@@ -67,6 +75,13 @@
 				90DF1A5626777F7500E77E2C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		90DF1A632677915C00E77E2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +100,9 @@
 			dependencies = (
 			);
 			name = "VTViews-Master";
+			packageProductDependencies = (
+				90DF1A642677915C00E77E2C /* VTViews */,
+			);
 			productName = "VTViews-Master";
 			productReference = 90DF1A4C26777F6F00E77E2C /* VTViews-Master.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90DF1A5226777F6F00E77E2C /* ContentView.swift in Sources */,
+				90DF1A6126778E0F00E77E2C /* SideMenuViewTest.swift in Sources */,
 				90DF1A5026777F6F00E77E2C /* VTViews_MasterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +347,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90DF1A642677915C00E77E2C /* VTViews */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VTViews;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90DF1A4426777F6F00E77E2C /* Project object */;
 }
